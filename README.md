@@ -18,5 +18,5 @@ startup:
 appsettings:
 
     "ConnectionStrings": {
-    "DefaultConnection": "Server=DESKTOP-3DUHIB4\\SQLEXPRESS;Database=soporte2;Trusted_Connection=True;"
+    "DefaultConnection": "Server=*\\SQLEXPRESS;Database=soporte2;Trusted_Connection=True;"
     },
