@@ -7,6 +7,7 @@ nugets:
         sqlserver
 	       tools
 
+# Ingenieria inversa
 scaffold-DbContext "Server=*\SQLEXPRESS;Database=soporte4;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
 
