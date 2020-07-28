@@ -28,7 +28,7 @@ namespace WebApplication2.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=DESKTOP-3DUHIB4\\SQLEXPRESS;Database=soporte4;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=localhost;Database=soporte4;User Id=sa;Password=hacker2012.L;");
             }
         }
 
