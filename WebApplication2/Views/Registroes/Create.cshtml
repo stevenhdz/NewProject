@@ -29,40 +29,35 @@
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label asp-for="Nombre" class="control-label"></label>
-                                        <input asp-for="Nombre" class="form-control" />
+                                <div class="col-md-2">
+                                    <div class="form-group"> 
+                                        <input asp-for="Nombre" placeholder="Nombre" class="form-control" />
                                         <span asp-validation-for="Nombre" class="text-danger"></span>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-2">
                                     <div class="form-group">
-                                        <label asp-for="Apellido" class="control-label"></label>
-                                        <input asp-for="Apellido" class="form-control" />
+                                        <input asp-for="Apellido" placeholder="Apellido" class="form-control" />
                                         <span asp-validation-for="Apellido" class="text-danger"></span>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-2">
                                     <div class="form-group">
-                                        <label asp-for="Numero" class="control-label"></label>
-                                        <input asp-for="Numero" class="form-control" />
+                                        <input asp-for="Numero" placeholder="Celular o Fijo" class="form-control" />
                                         <span asp-validation-for="Numero" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input asp-for="Direccion" placeholder="Direccion" class="form-control" />
+                                        <span asp-validation-for="Direccion" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label asp-for="Direccion" class="control-label"></label>
-                                        <input asp-for="Direccion" class="form-control" />
-                                        <span asp-validation-for="Direccion" class="text-danger"></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label asp-for="Correo" class="control-label"></label>
-                                        <input asp-for="Correo" class="form-control" />
+                                        <input asp-for="Correo" placeholder="Correo" class="form-control" />
                                         <span asp-validation-for="Correo" class="text-danger"></span>
                                     </div>
                                 </div>
@@ -81,46 +76,38 @@
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
-                                        <label asp-for="CantidadEquipos" class="control-label"></label>
-                                        <input asp-for="CantidadEquipos" class="form-control" />
+                                        <input asp-for="CantidadEquipos" placeholder="Cantidad Equipos" class="form-control" />
                                         <span asp-validation-for="CantidadEquipos" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label asp-for="Marca" class="control-label"></label>
-                                        <select asp-for="Marca" class="form-control" asp-items="ViewBag.Marca"></select>
+                                        <select asp-for="Marca" class="form-control" asp-items="ViewBag.Marca">
+                                            <option value="" selected disabled hidden>Seleccionar Marca</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-5">
                                     <div class="form-group">
-                                        <label asp-for="Modelo" class="control-label"></label>
-                                        <select asp-for="Modelo" class="form-control" asp-items="ViewBag.Modelo"></select>
+                                        <select asp-for="Modelo" class="form-control" asp-items="ViewBag.Modelo">
+                                            <option value="" selected disabled hidden>Seleccionar Modelo</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label asp-for="Seriales" class="control-label"></label>
-                                            <input asp-for="Seriales" class="form-control" />
-                                            <span asp-validation-for="Seriales" class="text-danger"></span>
-                                        </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea asp-for="Descripcion" class="form-control" rows="6" placeholder="Descripcion" autocomplete="off" aria-label="With textarea"></textarea>
+                                        <span asp-validation-for="Descripcion" class="text-danger"></span>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label asp-for="Descripcion" class="control-label"></label>
-                                            <input asp-for="Descripcion" class="form-control" />
-                                            <span asp-validation-for="Descripcion" class="text-danger"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label asp-for="ProfilePicture" class="control-label"></label>
-                                            <input asp-for="ProfilePicture" class="form-control" />
-                                            <span asp-validation-for="ProfilePicture" class="text-danger"></span>
-                                        </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea asp-for="Seriales" class="form-control" rows="6" placeholder="Ingrese serial" autocomplete="off" aria-label="With textarea"></textarea>
+                                        <span asp-validation-for="Seriales" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
@@ -140,59 +127,41 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label asp-for="ValorUnidad" class="control-label"></label>
-                                        <input asp-for="ValorUnidad" class="form-control" />
-                                        <span asp-validation-for="ValorUnidad" class="text-danger"></span>
+                                        <select asp-for="Garantia" class="form-control" asp-items="ViewBag.Garantia">
+                                            <option value="" selected disabled hidden>Garantia</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label asp-for="FechaSalida" class="control-label"></label>
-                                        <input asp-for="FechaSalida" class="form-control" />
-                                        <span asp-validation-for="FechaSalida" class="text-danger"></span>
+                                        <select asp-for="NombreTecnico" class="form-control" asp-items="ViewBag.NombreTecnico">
+                                            <option value="" selected disabled hidden>Analista</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label asp-for="ValorTotal" class="control-label"></label>
-                                        <input asp-for="ValorTotal" class="form-control" />
-                                        <span asp-validation-for="ValorTotal" class="text-danger"></span>
+                                        <select asp-for="Categoria" class="form-control" asp-items="ViewBag.Categoria">
+                                            <option value="" selected disabled hidden>Seleccione servicio</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label asp-for="DescripcionRespuesta" class="control-label"></label>
-                                            <input asp-for="DescripcionRespuesta" class="form-control" />
-                                            <span asp-validation-for="DescripcionRespuesta" class="text-danger"></span>
-                                        </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" asp-for="Datos" /> <p>Acepto las Condiciones del servicio y la Politica de privacidad de SLTECHNOLOGY</p>
+                                        </label>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label asp-for="Garantia" class="control-label"></label>
-                                            <select asp-for="Garantia" class="form-control" asp-items="ViewBag.Garantia"></select>
-                                        </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                            <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+                                            <input class="form-check-input" placeholder="Nada" asp-for="ProfilePicture" />
+                                        </label>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label asp-for="NombreTecnico" class="control-label"></label>
-                                            <select asp-for="NombreTecnico" class="form-control" asp-items="ViewBag.NombreTecnico"></select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label asp-for="Categoria" class="control-label"></label>
-                                            <select asp-for="Categoria" class="form-control" asp-items="ViewBag.Categoria"></select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group form-check">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" asp-for="Datos" /> <p>Acepto las Condiciones del servicio y la Politica de privacidad de SLTECHNOLOGY</p>
-                                            </label>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -207,20 +176,8 @@
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
-@section scripts{
-    <script type="text/javascript">// Tooltips Initialization
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
-        // Add the following code if you want the name of the file appear on select
-        $(".custom-file-input").on("change", function () {
-            var fileName = $(this).val().split("\\").pop();
-            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-        });</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
-
-
