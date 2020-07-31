@@ -2,6 +2,10 @@
  CentroServicios.
 
 
+diagram app:
+
+https://app.diagrams.net/#Hstevenhdz%2FNewProject%2Fmaster%2FUntitled%20Diagram.drawio
+
 nugets: 
 
         sqlserver
