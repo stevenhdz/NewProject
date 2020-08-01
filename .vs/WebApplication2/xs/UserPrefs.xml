@@ -2,13 +2,17 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="WebApplication2/Views/Registroes/Create.cshtml">
     <Files>
       <File FileName="WebApplication2/Views/Shared/_Layout.cshtml" Line="17" Column="1" />
-      <File FileName="WebApplication2/Views/Registroes/Create.cshtml" Line="32" Column="53" />
+      <File FileName="WebApplication2/Views/Registroes/Create.cshtml" Line="160" Column="73" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebApplication2" expanded="True">
             <Node name="WebApplication2" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
