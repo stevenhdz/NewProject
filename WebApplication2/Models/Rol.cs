@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace WebApplication2.Models
 {
-    public class Rol
+    public partial class Rol
     {
         public Rol()
         {
@@ -13,7 +13,7 @@ namespace WebApplication2.Models
         }
 
         public int IdRol { get; set; }
-        public string Rol { get; set; }
+        public string Role { get; set; }
 
         public virtual ICollection<Analista> Analista { get; set; }
     }
