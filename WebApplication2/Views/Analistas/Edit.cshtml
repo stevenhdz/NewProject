@@ -1,40 +1,42 @@
 ﻿@model WebApplication2.Models.Analista
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Edit</h1>
+<h1>Index</h1>
 
-<h4>Analista</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="IdAnalista" class="control-label"></label>
-                <input asp-for="IdAnalista" class="form-control" />
-                <span asp-validation-for="IdAnalista" class="text-danger"></span>
-            </div>
-            <input type="hidden" asp-for="NombreTecnico" />
-            <div class="form-group">
-                <label asp-for="Rol" class="control-label"></label>
-                <input asp-for="Rol" class="form-control" />
-                <span asp-validation-for="Rol" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAnalista)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RolNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAnalista)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RolNavigation.Role)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.NombreTecnico">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.NombreTecnico">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.NombreTecnico">Delete</a>
+            </td>
+        </tr>
 }
+    </tbody>
+</table>
