@@ -22,6 +22,7 @@ namespace WebApplication2.Models
         public virtual DbSet<Marca> Marca { get; set; }
         public virtual DbSet<Modelo> Modelo { get; set; }
         public virtual DbSet<Registro> Registro { get; set; }
+        public virtual DbSet<Rol> Rol { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -51,6 +52,21 @@ namespace WebApplication2.Models
                     .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
+            });
+
+             modelBuilder.Entity<Rol>(entity =>
+            {
+                entity.HasKey(e => e.Rol)
+                    .HasName("PK__Rol_1");
+
+                entity.Property(e => e.Rol)
+                    .HasColumnName("Rol")
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.idRol)
+                    .HasColumnName("idRol")
+                    .ValueGeneratedOnAdd();
             });
 
             modelBuilder.Entity<Categoria>(entity =>
