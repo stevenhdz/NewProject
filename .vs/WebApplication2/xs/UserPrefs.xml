@@ -1,25 +1,25 @@
-﻿<Properties StartupConfiguration="{DC91D114-5CEF-4199-8888-390EAEC9BB0E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApplication2/Views/Registroes/Create.cshtml">
+﻿<Properties StartupConfiguration="{DC91D114-5CEF-4199-8888-390EAEC9BB0E}|WebApplication2">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApplication2/Models/Rol.cs">
     <Files>
       <File FileName="WebApplication2/Views/Shared/_Layout.cshtml" Line="17" Column="1" />
-      <File FileName="WebApplication2/Views/Registroes/Create.cshtml" Line="158" Column="55" />
+      <File FileName="WebApplication2/Views/Registroes/Create.cshtml" />
+      <File FileName="WebApplication3/Startup.cs" />
+      <File FileName="WebApplication3/appsettings.json" />
+      <File FileName="WebApplication3/Program.cs" />
+      <File FileName="WebApplication2/Startup.cs" />
+      <File FileName="WebApplication2/appsettings.json" />
+      <File FileName="WebApplication2/Models/soporte4Context.cs" />
+      <File FileName="WebApplication2/Models/Registro.cs" />
+      <File FileName="WebApplication2/Models/Rol.cs" Line="21" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebApplication2" expanded="True">
             <Node name="WebApplication2" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="Registroes" expanded="True">
-                  <Node name="Create.cshtml" selected="True" />
-                </Node>
+              <Node name="Models" expanded="True">
+                <Node name="Rol.cs" selected="True" />
               </Node>
-            </Node>
-            <Node name="WebApplication3" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-              </Node>
-              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "7TfA3wdaHDdRL/er/BU+GvKlRmDk+by5pS3R2+BVZfDxebluuH2wwEuTGhMiOPxzRv1dX4JvgB6uc7K+UTJrrg==",
+  "dgSpecHash": "zSaYOi1FX9CHZwLeZwCNvKhPCRI8KBqZScJYWP7ErsK6kGQs3SCyo63BD9jngKKem4ES33YiMEocQ//OytUpnA==",
   "success": true,
-  "projectFilePath": "D:\\NewProject\\WebApplication3\\WebApplication3.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/alexanderjimenez/Desktop/NewProject/WebApplication3/WebApplication3.csproj",
+  "expectedPackageFiles": [
+    "/Users/alexanderjimenez/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.3/microsoft.aspnetcore.app.ref.3.1.3.nupkg.sha512",
+    "/Users/alexanderjimenez/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

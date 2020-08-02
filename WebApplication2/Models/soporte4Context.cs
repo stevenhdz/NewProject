@@ -64,7 +64,7 @@ namespace WebApplication2.Models
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
-                entity.Property(e => e.idRol)
+                entity.Property(e => e.IdRol)
                     .HasColumnName("idRol")
                     .ValueGeneratedOnAdd();
             });
