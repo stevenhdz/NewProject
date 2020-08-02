@@ -78,6 +78,11 @@ ALTER TABLE [dbo].[Registro] ADD  DEFAULT (getdate()) FOR [FechaEntrada]
 GO
 ALTER TABLE [dbo].[Registro] ADD  DEFAULT ((1)) FOR [estado]
 GO
+ALTER TABLE [dbo].[Analista]  WITH CHECK ADD  CONSTRAINT [FK_Analista_Rol] FOREIGN KEY([Rol])
+REFERENCES [dbo].[Rol] ([Role])
+GO
+ALTER TABLE [dbo].[Analista] CHECK CONSTRAINT [FK_Analista_Rol]
+GO
 ALTER TABLE [dbo].[Registro]  WITH CHECK ADD  CONSTRAINT [FK_Registro_Analista] FOREIGN KEY([NombreTecnico])
 REFERENCES [dbo].[Analista] ([NombreTecnico])
 GO
