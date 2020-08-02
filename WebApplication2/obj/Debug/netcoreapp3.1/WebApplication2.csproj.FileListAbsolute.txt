@@ -594,3 +594,8 @@ D:/NewProject/WebApplication2/obj/Debug/netcoreapp3.1/staticwebassets/WebApplica
 D:/NewProject/WebApplication2/obj/Debug/netcoreapp3.1/WebApplication2.dll
 D:/NewProject/WebApplication2/obj/Debug/netcoreapp3.1/WebApplication2.pdb
 D:/NewProject/WebApplication2/obj/Debug/netcoreapp3.1/WebApplication2.genruntimeconfig.cache
+/Users/alexanderjimenez/Desktop/NewProject/WebApplication2/obj/Debug/netcoreapp3.1/Razor/Views/Rols/Create.cshtml.g.cs
+/Users/alexanderjimenez/Desktop/NewProject/WebApplication2/obj/Debug/netcoreapp3.1/Razor/Views/Rols/Delete.cshtml.g.cs
+/Users/alexanderjimenez/Desktop/NewProject/WebApplication2/obj/Debug/netcoreapp3.1/Razor/Views/Rols/Details.cshtml.g.cs
+/Users/alexanderjimenez/Desktop/NewProject/WebApplication2/obj/Debug/netcoreapp3.1/Razor/Views/Rols/Edit.cshtml.g.cs
+/Users/alexanderjimenez/Desktop/NewProject/WebApplication2/obj/Debug/netcoreapp3.1/Razor/Views/Rols/Index.cshtml.g.cs

@@ -14,6 +14,7 @@ namespace WebApplication2.Models
         public string NombreTecnico { get; set; }
         public string Rol { get; set; }
 
+        public virtual Rol RolNavigation { get; set; }
         public virtual ICollection<Registro> Registro { get; set; }
     }
 }

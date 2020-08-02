@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using WebApplication3.Models;
+using WebApplication2.Models;
 
 namespace WebApplication3.Controllers
 {
     public class RolsController : Controller
     {
-        private readonly soporte7Context _context;
+        private readonly soporte4Context _context;
 
-        public RolsController(soporte7Context context)
+        public RolsController(soporte4Context context)
         {
             _context = context;
         }
