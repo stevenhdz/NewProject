@@ -1,6 +1,9 @@
 # ProjectoNuevo
  CentroServicios.
 
+package:
+Windows: %userprofile%\.nuget\packages
+Mac/Linux: ~/.nuget/packages
 
 diagram app:
 
