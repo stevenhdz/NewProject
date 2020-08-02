@@ -2,6 +2,12 @@ CREATE DATABASE soporte4;
 go
 use soporte4;
 go
+CREATE TABLE Rol
+(
+    idRol int IDENTITY(1,1) NOT NULL,
+    Role VARCHAR(50) PRIMARY KEY NOT NULL,
+)
+go
 CREATE TABLE Registro
 (
     idRegistro int PRIMARY KEY IDENTITY(1,1) NOT NULL,
