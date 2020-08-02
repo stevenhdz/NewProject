@@ -1,5 +1,6 @@
 ﻿@model WebApplication2.Models.Analista
 
+
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -18,10 +19,10 @@
             @Html.DisplayFor(model => model.IdAnalista)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Rol)
+            @Html.DisplayNameFor(model => model.RolNavigation)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Rol)
+            @Html.DisplayFor(model => model.RolNavigation.Role)
         </dd>
     </dl>
 </div>
