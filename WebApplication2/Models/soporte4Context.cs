@@ -52,15 +52,20 @@ namespace WebApplication2.Models
                     .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
+                    
+                    entity.HasOne(d => d.RolNavigation)
+                    .WithMany(p => p.Analista)
+                    .HasForeignKey(d => d.Rol)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Analista_Rol");
             });
 
-             modelBuilder.Entity<Rol>(entity =>
+            modelBuilder.Entity<Rol>(entity =>
             {
-                entity.HasKey(e => e.Rol)
-                    .HasName("PK__Rol_1");
+                entity.HasKey(e => e.Role)
+                    .HasName("PK__Rol__DA15413F294FE8DA");
 
-                entity.Property(e => e.Rol)
-                    .HasColumnName("Rol")
+                entity.Property(e => e.Role)
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
