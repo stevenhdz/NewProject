@@ -7,5 +7,14 @@ namespace WebApplication2.Models
 {
     public class Rol
     {
+        public Rol()
+        {
+            Analista = new HashSet<Analista>();
+        }
+
+        public int IdRol { get; set; }
+        public string Rol { get; set; }
+
+        public virtual ICollection<Analista> Analista { get; set; }
     }
 }
