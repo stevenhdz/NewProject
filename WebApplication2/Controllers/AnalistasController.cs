@@ -21,11 +21,12 @@ namespace WebApplication2.Controllers
         // GET: Analistas
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Analista.ToListAsync());
+             var soporte7Context = _context.Analista.Include(a => a.RolNavigation);
+            return View(await soporte7Context.ToListAsync());
         }
 
         // GET: Analistas/Details/5
-        public async Task<IActionResult> Details(string id)
+         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -33,6 +34,7 @@ namespace WebApplication2.Controllers
             }
 
             var analista = await _context.Analista
+                .Include(a => a.RolNavigation)
                 .FirstOrDefaultAsync(m => m.NombreTecnico == id);
             if (analista == null)
             {
@@ -45,6 +47,7 @@ namespace WebApplication2.Controllers
         // GET: Analistas/Create
         public IActionResult Create()
         {
+            ViewData["Rol"] = new SelectList(_context.Rol, "Role", "Role");
             return View();
         }
 
@@ -61,6 +64,7 @@ namespace WebApplication2.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Rol"] = new SelectList(_context.Rol, "Role", "Role", analista.Rol);
             return View(analista);
         }
 
@@ -77,6 +81,7 @@ namespace WebApplication2.Controllers
             {
                 return NotFound();
             }
+             ViewData["Rol"] = new SelectList(_context.Rol, "Role", "Role", analista.Rol);
             return View(analista);
         }
 
@@ -112,6 +117,7 @@ namespace WebApplication2.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+             ViewData["Rol"] = new SelectList(_context.Rol, "Role", "Role", analista.Rol);
             return View(analista);
         }
 
@@ -124,6 +130,7 @@ namespace WebApplication2.Controllers
             }
 
             var analista = await _context.Analista
+                .Include(a => a.RolNavigation)
                 .FirstOrDefaultAsync(m => m.NombreTecnico == id);
             if (analista == null)
             {
