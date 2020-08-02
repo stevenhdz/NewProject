@@ -1,6 +1,12 @@
 # ProjectoNuevo
  CentroServicios.
 
+Control de versiones instaladas:
+
+ 		~/.nuget/packages/microsoft.entityframeworkcore.sqlite/
+		ls
+		la
+
 package:
 Windows: %userprofile%\.nuget\packages
 Mac/Linux: ~/.nuget/packages
